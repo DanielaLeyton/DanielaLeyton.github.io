@@ -21,25 +21,72 @@ html, body {
 }
 .container{
     max-width: 1400px;
-    height: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
+    /* height: 100%; */
+    padding-right: 2rem;
+    padding-left: 2rem;
     margin-right: auto;
     margin-left: auto;
-}
-.profile {
     width: 90%;
+}
+.header {
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 0;
+}
+.header__container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: flex;
+}
+.header__container ul, .footer__container ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.header__container ul li, .footer__container ul li {
+    margin-left: 2.5rem;
+}
+.header__container ul li a, .footer__container ul li a {
+    color: #353535;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 0;
+
+}
+.me-img {
+
+}
+.me-text {
+    width: 100%;
     height: auto;
 }
-.profile h1, .profile p{
-    margin-bottom: 20px;
+.profile_title, .profile p{
+    margin-bottom: 1.2rem;
 }
 .profile_title{
-    font-size: 56px;
+    font-size: 4rem;
     font-weight: bold;
 }
 .profile_paragraph{
-    font-size: 20px;
+    font-size: 1.8rem;
     flex: 0 auto;    
     align-self: auto;
     order: 0;
@@ -53,3 +100,120 @@ html, body {
     -ms-flex: 0 auto;
     -ms-flex-order: 0;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-full {
+    width: 100%;
+    display: flex;
+    margin: 1.2rem;
+}
+.card {
+    width: 46%;
+    display: flex;
+    margin: 1.2rem;
+}
+.current{
+    width: 100%;
+    background-color: #F6F8FA;
+}
+
+.cont-left {
+    justify-content: end;
+}
+.article{
+    margin-bottom: 2rem;
+}
+.item{
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.one{
+    background-color:#FEE9F7;
+}
+.two{
+    background-color:#E2F3FF;
+} 
+.box-img{
+    display: flex;
+    justify-content: center;
+}
+.img-100{
+    width: 20%;
+}
+.img-50{
+    width: 32%;
+}
+.content{
+    margin-bottom: 2rem;
+}
+.work_title{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.work_paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+.link{
+    text-decoration: none;
+    color: #353535;
+}
+.experience{
+    margin: 6rem 0;
+}
+.experience_title{
+    font-size: 2.4rem;
+}
+.footer {
+    padding: 5rem 0 0;
+}
+.footer__container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2rem 0;
+    display: flex;
+}
+.footer__container p {
+    font-weight: 600;
+    margin-left: 1.5625rem;
+    display: flex;
+}
+@media screen and (max-width: 1000px) {
+    .me-text{
+        width: 100%;
+    }
+    .profile_title{
+        font-size:2rem ;
+    }
+    .profile_paragraph{
+        font-size: 1.4rem;
+    }
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .img-100, .img-50 {
+        width: 40%;
+    }
+    .cont-left {
+        justify-content: start;
+    }
+}
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 1.4rem 0;
+    }
+}
+
+  
