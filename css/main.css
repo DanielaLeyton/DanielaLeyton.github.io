@@ -68,7 +68,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8rem 0;
+    margin: 10rem 0;
 
 }
 .me-img {
@@ -166,9 +166,24 @@ html, body {
 .experience{
     margin: 6rem 0;
 }
-.experience_title{
+.experience_title {
     font-size: 2.4rem;
+    font-weight: 400;
 }
+.carrer-headline-wrap {
+    width: 70%;
+}
+.carrer-headline-title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.carrer-headline-text {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+
 .footer {
     padding: 5rem 0 0;
 }
@@ -192,7 +207,7 @@ html, body {
         width: 100%;
     }
     .profile_title{
-        font-size:2rem ;
+        font-size:2.6rem ;
     }
     .profile_paragraph{
         font-size: 1.4rem;
@@ -217,3 +232,126 @@ html, body {
 }
 
   
+.section {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.container-foot {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email-section {
+    width: 70%;
+    text-align: center;
+    margin: 8rem auto;
+}
+.title-email{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+}
+.email-link {
+    text-transform: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 88px;
+    text-decoration: none;
+}
+.footer-wrap {
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+    display: flex;
+}
+.webflow-link {
+    opacity: .5;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity .4s;
+    display: flex;
+    font-weight: 400;
+    color: #232428;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+@media screen and (max-width: 479px) {
+    .email-section {
+        width: 100%;
+        max-width: none;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .email-section {
+        width: 80%;
+        max-width: 470px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .email-section {
+        margin-bottom: 160px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .section {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container-foot {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 479px) {
+    .email-link {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .email-link {
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .email-link {
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .contact-form, .contact-form-wrap, .footer-wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-wrap {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+.logo{
+    --animate-duration: 0.6s;
+}
+.nav {
+    --animate-duration: .8s;
+  }

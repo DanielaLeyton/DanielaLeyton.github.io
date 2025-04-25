@@ -11,6 +11,7 @@
 		<meta name="theme-color" content="#FEFEFE">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,900&display=swap" rel="stylesheet" media="all">
@@ -23,12 +24,12 @@
 	<body>
 		<header class="header">
 			<div class="container header__container">
-			<a href="#" class="logo header__container__logo">
+			<a href="index.html" class="logo header__container__logo animate__animated animate__fadeInDown">
 				<img src="./assets/images/dany-logo.svg" width="55" height="54" alt="Dany Leyton">
 			</a>
-				<nav>
+				<nav class="nav animate__animated animate__fadeInDown">
 					<ul>
-						<li><a href="#">Inicio</a></li>
+						<li><a href="index.html">Inicio</a></li>
 						<li><a href="#">Contacto</a></li>
 					</ul>
 				</nav>
@@ -39,13 +40,21 @@
 			<section class="profile">
 				<div class="me-img"></div>
 				<div class="me-text">
-					<h1 class="profile_title">Hola, Soy Dany Leyton!</h1>
-					<p class="profile_paragraph">Diseñadora de interacción enfocada en la experiencia de punta a punta para productos digitales.
+					<h1 class="profile_title animate__animated animate__fadeInUp animate__delay-1s">Hola, Soy Daniela Leyton!</h1>
+					<p class="profile_paragraph animate__animated animate__fadeInUp animate__delay-2s">Diseñadora de interacción enfocada en la experiencia de punta a punta para productos digitales.
 						Actualmente diseñando experiencias para <strong>Cencosud</strong>.</p>
 				</div>
 			</section>
 
-			<section class="row work">
+			<section class="row work animate__animated animate__fadeInUp animate__delay-3s">
+				<div class="carrer-headline-wrap">
+					<h2 class="carrer-headline-title">
+						Mis últimos proyectos
+					</h2>
+					<p class="work_paragraph">Diseñadora de interacción enfocada en la experiencia de punta a punta para productos digitales.
+						Actualmente diseñando experiencias para <strong>Cencosud</strong>.</p>
+				</div>
+
 				<div class="card-full">
 					  <div class="item current">
 						  <div class="content">
@@ -60,19 +69,19 @@
 				  </div>
 			</section>
 
-			<section class="row work">
+			<section class="row work animate__animated animate__fadeInUp animate__delay-4s">
 				<div class="card">
-						<div class="item one">
-							<div class="content">
-								<h2 class="work_title">App Cobro QR</h2>
-								<p class="work_paragraph">Una nueva experiencia de cobro que también facilita la administración del negocio</p>
-								<a href="#" class="link">ver caso &rarr;</a>
-							</div>
-							<div class="box-img">
-								<img class="img-50" src="./assets/images/transbank.png" alt="Proyecto Cobro QR">
-							</div>
+					<div class="item one">
+						<div class="content">
+							<h2 class="work_title">App Cobro QR</h2>
+							<p class="work_paragraph">Una nueva experiencia de cobro que también facilita la administración del negocio</p>
+							<a href="#" class="link">ver caso &rarr;</a>
+						</div>
+						<div class="box-img">
+							<img class="img-50" src="./assets/images/transbank.png" alt="Proyecto Cobro QR">
 						</div>
 					</div>
+				</div>
 			  
 				<div class="card">
 					<div class="item two">
@@ -89,7 +98,13 @@
 			</section>
 
 			<section class="experience">
-				<h2 class="experience_title">Experiencia</h2>
+				<div class="carrer-headline-wrap">
+					<h2 class="carrer-headline-title">
+						Mi experiencia
+					</h2>
+					<p class="work_paragraph">Diseñadora de interacción enfocada en la experiencia de punta a punta para productos digitales.
+						Actualmente diseñando experiencias para <strong>Cencosud</strong>.</p>
+				</div>
 
 				<div class="row">
 					<div class="card cont-left">
@@ -101,7 +116,7 @@
 					<div class="card">
 						<div class="item">
 							<article class="article">
-								<h3>Head of Product Designer</h3>
+								<h3>ProductOps & Design Lead</h3>
 								<p>Guiar y coordinar al equipo de diseño para asegurar que todas las interacciones y puntos de contacto sean coherentes 
 								en todos los niveles de la experiencia con el producto.</p>
 							</article>
@@ -176,13 +191,29 @@
 		</div>
 
 		<footer class="footer">
-			<div class="container footer__container">
-				<p>Let's Connect</p>
-				<ul>
-					<li><a href="#">Linkedin</a></li>
-					<li><a href="#">Gmail</a></li>
-				</ul>
+			<div class="section">
+				<div class="container-foot">
+					<div class="email-section">
+						<h3 class="title-email">Si te gusta lo que ves y quieres que trabajemos en equipo, ¡escríbeme!</h3>
+						<a href="mailto:daniela.leytonm@gmail.com" class="email-link">hola@daniela.com</a>
+					</div>
+				</div>
+
+				<div class="container footer__container">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/danielaleyton/" target="_blank">Let's connect on Linkedin</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="footer-wrap">
+				<div>
+					<a href="https://github.com/DanielaLeyton/DanielaLeyton.github.io" target="_blank" class="webflow-link w-inline-block">
+						<div class="paragraph-tiny">© Designed and Built by <strong>Daniela Leyton</strong></div>
+					</a>
+				</div>
 			</div>
 		</footer>
+
 	</body>
 </html>
